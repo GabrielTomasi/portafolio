@@ -1,0 +1,38 @@
+.nav {
+    display: flex;
+    justify-content: end;
+    align-items:center;
+    position: static;
+    width: 100%vw;
+    height: 50px;
+    background-color: white;
+  }
+
+.button {
+    padding: 0px 25px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color:transparent;
+    font-family: 'Jost Variable', sans-serif;
+    font-size: large;
+}
+
+.button:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: transparent;
+    transition: width 0.3s, background-color 0.3s;
+  }
+
+  .button:hover::after {
+    width: 100%;
+    background: #000;
+  }
+
+  .active:after {
+    width: 100%;
+    background: #000;
+  }

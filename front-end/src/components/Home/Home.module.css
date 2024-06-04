@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    width: 100%vw;
+    height: 700px;
+
+    margin: 50px 0px;
+    padding: 0px 20px;
+
+}
+
+.imgContainer {
+    display: flex;
+
+    width: 50%;
+    align-content: center;
+    justify-content: center;
+    justify-self: end;
+    text-align: end;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+    align-content: end;
+    justify-content: flex-start;
+    justify-self: center;
+    text-align: end;
+    margin: 100px;
+    color: white;
+
+}
+
+h1 {
+    display:  flex;
+    justify-content: end;
+    align-content: flex-start;
+    font-size: 50px;
+
+    padding: 0;
+    margin: 0;
+}
+
+.h2Container{
+    display:flex;
+    justify-content: end;
+    font-size: 15px;
+}
+.h2Container h2 {
+    margin: 0px 15px;
+    font-weight: 400;  
+    letter-spacing: -0.25px;  
+}
+.textContainer p {
+    display: flex;
+    width: 450px;
+    height: fit-content;
+    margin-top: 150px;
+    font-size: 30px;
+    justify-items: end;
+    align-self: end;
+    
+}
+
