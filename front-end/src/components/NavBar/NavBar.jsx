@@ -1,12 +1,6 @@
-import { useState } from "react";
 import { NavLink } from "react-router-dom"
 import style from "./NavBar.module.css";
-const NavBar = () => {
-    const [activePage, setActivePage] = useState('home');
-
-    const handleClick = (page)=>{
-        setActivePage(page)
-    }
+const NavBar = ({activePage, handleClick}) => {
 
 return(
     <nav className={style.nav}>
