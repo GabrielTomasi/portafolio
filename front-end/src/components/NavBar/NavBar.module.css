@@ -1,9 +1,10 @@
 .nav {
+  position: fixed;
+  top: 0;
     display: flex;
     justify-content: end;
     align-items:center;
-    position: static;
-    width: 100%vw;
+    width: 100vw;
     height: 50px;
     background-color: white;
   }

@@ -1,29 +1,66 @@
-import { NavLink } from "react-router-dom"
+import { useState } from "react";
 import style from "./NavBar.module.css";
-const NavBar = ({activePage, handleClick}) => {
+import { HashLink as Link } from "react-router-hash-link";
+const NavBar = () => {
+  const [activePage, setActivePage] = useState("home");
+  const handleClick = (page) => {
+    setActivePage(page);
+  };
 
-return(
+  return (
     <nav className={style.nav}>
-        <div>
-            <NavLink to={"/"} >
-                <button className={`${style.button}  ${activePage === 'home' ? style.active : ""}`}
-                onClick={()=>{handleClick('home')}}>Home</button>
-            </NavLink>
-            <NavLink to={"/stack"} >
-                <button className={`${style.button}  ${activePage === 'stack' ? style.active : ""}`}
-                onClick={()=>{handleClick('stack')}}>Stack</button>
-            </NavLink>
-            <NavLink to={"/proyects"} >
-                <button className={`${style.button}  ${activePage === 'proyects' ? style.active : ""}`}
-                onClick={()=>{handleClick('proyects')}}>Proyectos</button>
-            </NavLink>
-            <NavLink to={"/contact"} >
-                <button className={`${style.button}  ${activePage === 'contact' ? style.active : ""}`}
-                onClick={()=>{handleClick('contact')}}>Conctacto</button>
-            </NavLink>
-        </div>
-    </nav>
-)
-}
+      <Link to={"#home"} smooth>
+        <button
+          className={`${style.button}  ${
+            activePage === "home" ? style.active : ""
+          }`}
+          onClick={() => {
+            handleClick("home");
+          }}
+        >
+          Home
+        </button>
+      </Link>
 
-export default NavBar
+      <Link to={"#stack"} smooth>
+        <button
+          className={`${style.button}  ${
+            activePage === "stack" ? style.active : ""
+          }`}
+          onClick={() => {
+            handleClick("stack");
+          }}
+        >
+          Stack
+        </button>
+      </Link>
+
+      <Link to={"#proyects"} smooth>
+        <button
+          className={`${style.button}  ${
+            activePage === "proyects" ? style.active : ""
+          }`}
+          onClick={() => {
+            handleClick("proyects");
+          }}
+        >
+          Proyectos
+        </button>
+      </Link>
+      <Link to={"#contact"} smooth>
+        <button
+          className={`${style.button}  ${
+            activePage === "contact" ? style.active : ""
+          }`}
+          onClick={() => {
+            handleClick("contact");
+          }}
+        >
+          Conctacto
+        </button>
+      </Link>
+    </nav>
+  );
+};
+
+export default NavBar;
