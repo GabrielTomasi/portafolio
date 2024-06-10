@@ -1,0 +1,45 @@
+.cardContainer {
+  display: flex;
+  border: solid;
+  height: 70%;
+  width: 90%;
+  justify-content: space-between;
+  margin-top: 15px;
+  background-image: url("C:\Users\user\Desktop\Repositorios\Proyecto portafolio\front-end\src\assets\proyects\videogames\videogamesImg1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  border-radius: 20px;
+}
+
+.leftcontainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: blue;
+}
+.name {
+  opacity: 1;
+  display: flex;
+  width: max-content;
+  height: min-content;
+  background-color: beige;
+  text-align: center;
+}
+
+.imageContainer {
+  opacity: 1;
+  display: flex;
+  width: 75%;
+  height: 50%;
+  background-color: aqua;
+}
+
+.infoContainer {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  background-color: red;
+}
