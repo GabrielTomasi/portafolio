@@ -9,11 +9,10 @@ import tailwindLogo from "../../../assets/iconos/front/tailwind.png";
 import styledComponentsLogo from "../../../assets/iconos/front/styled components logo.png";
 import graphQLLogo from "../../../assets/iconos/front/graphQL.png";
 import style from "./FrontEndStack.module.css";
-import LazyLoad from "react-lazyload";
-import { RevolvingDot } from "react-loader-spinner";
+
 const FrontEndStack = () => {
   return (
-    <>
+    <div className={style.frontContainer}>
       <img className={style.frontImg} src={frontImg} alt="frontImg" />
       <h3>Front end</h3>
       <div className={style.imagesContainer}>
@@ -30,7 +29,7 @@ const FrontEndStack = () => {
         />
         <img className={style.images} src={graphQLLogo} alt="graphQLLogo" />
       </div>
-    </>
+    </div>
   );
 };
 

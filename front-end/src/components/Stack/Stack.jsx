@@ -7,16 +7,12 @@ const Stack = () => {
   return (
     <div className={style.container}>
       <div className={style.stackContainer}>
-      <header className={style.header}><h2>MIS HERRAMIENTAS</h2> </header>
-        <div className={style.frontContainer}>
-            <FrontEndStack />
-        </div>
-        <div className={style.backContainer}>
-          <BackEndStack />
-        </div>
-        <div className={style.toolsContainer}>
-          <ToolStack />
-        </div>
+        <header className={style.header}>
+          <h2>MIS HERRAMIENTAS</h2>{" "}
+        </header>
+        <FrontEndStack />
+        <BackEndStack />
+        <ToolStack />
       </div>
     </div>
   );

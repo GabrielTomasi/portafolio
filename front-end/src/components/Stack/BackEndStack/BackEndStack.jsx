@@ -11,7 +11,7 @@ import postgreSQLLogo from "../../../assets/iconos/back/postgreSQL.png";
 
 const BackEndStack = () => {
   return (
-    <>
+    <div className={style.backContainer}>
       <img className={style.frontImg} src={backImg} alt="frontImg" />
       <h3>Back end</h3>
       <div className={style.imagesContainer}>
@@ -29,7 +29,7 @@ const BackEndStack = () => {
 
         <img className={style.images} src={apolloLogo} alt="apolloLogo" />
       </div>
-    </>
+    </div>
   );
 };
 
