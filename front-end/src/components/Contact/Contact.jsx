@@ -1,7 +1,11 @@
+import ContactForm from "./ContactForm/ContactForm"
+import style from "./Contact.module.css"
+
 const Contact = () => {
     return (
-        <div>
-            <h2>Contact</h2>
+        <div className={style.container}>
+
+            <ContactForm />
         </div>
     )
 }

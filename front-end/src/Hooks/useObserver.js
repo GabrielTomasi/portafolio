@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 const [elements, setElements] = useState([]);
 const [entries, setEntries] = useState([]);
-export default useObserver = (options) => {
+
+
+const useObserver = (options) => {
   const observer = useRef(
     new IntersectionObserver((observedEntries) => {
       setEntries(observedEntries);
@@ -21,3 +23,6 @@ export default useObserver = (options) => {
   }, [elements]);
   return [observer.current, setElements, entries];
 };
+
+
+export default useObserver
