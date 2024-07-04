@@ -15,6 +15,7 @@ const Proyects = ()=>{
       url= {proyect.url}
       githubUrl = {proyect.githubUrl}
       description = {proyect.description}
+      image = {proyect.image}
       />
     )
   })
@@ -23,15 +24,15 @@ const Proyects = ()=>{
         <header className={style.header}>
         <h2>Proyectos</h2>{" "}
       </header>
-      <AnimateKeyframes
+      {/* <AnimateKeyframes
      play
      duration={3}
      keyframes={["opacity: 0", "opacity: 1"]}
      iterationCount={2}
    
-      >
+      > */}
       {proyect}
-      </AnimateKeyframes>
+      {/* </AnimateKeyframes> */}
    
         </div>
     )
